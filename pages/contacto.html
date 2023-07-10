@@ -12,6 +12,7 @@
 <body>
      <nav class="navegador">
         <img src="/Multimedia/Logos/egox-logo-a.jpg" alt="logo empresa">
+        <i class="fa-solid fa-bars menu"></i>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
@@ -20,17 +21,67 @@
             </ul>
     </nav>
         
-    <header>
-
+    <header class="encabezado">
+        <h3>Contactenos</h3>
+        <div class="info-contacto">
+            <span>Direccion postal: Ayacucho 154. Mendoza , Argentina</span>
+            <span> Telefono: 2612598491</span>
+            <span>Sitio web: www.egox.com.ar</span>
+            <span>Email: info@egox.com.ar</span>
+        </div>
     </header>
-
     <main>
-
+        <form class="formulario">
+            <div class="dato dato-nombre"> 
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div class="dato dato-apellido"> 
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" required>
+            </div>
+            <div class="dato dato-tel">
+                <label for="tel">Tel:</label>
+                <input type="tel" name="tel" id="tel" required>
+            </div>
+            <div class=" dato dato-mail">
+                <label for="mail">Mail:</label>
+                <input type="email" name="mail" id="mail" required>
+            </div>
+            <div class="dato dato-consulta"> 
+                <label for="consulta">Consulta:</label>
+                <input type="text" name="consulta" id="consulta" required>
+            </div>
+                
+            <div class="dato-terminos">
+                <label for="acepta">Acepta terminos y condiciones:</label>
+                <input type="checkbox" name="acepta" id="acepta" value="si" required>
+            </div>
+           
+            <button type="submit">Enviar</button>
+          
+        </form>
     </main>
-    <footer>
-
-    </footer>
+   <footer class="piePagina">
+        <div class="info">
+            <div class="logo">
+                <img src="../Multimedia/Logos/egox-logo-a.jpg" alt="logo de la empresa">
+                <p>Desde 1976 Egox, es la mejor alternativa cuando debe seleccionar a su proveedor de acrílicos (materiales, productos elaborados) y carteles confeccionados con el mayor nivel de calidad del mercado.</p>
+            </div>
+        </div>
+  
+        <div class="contactos">
+            <span>Ubicacion:</span>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.518219147808!2d-58.57216942344208!3d-34.64161335950213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7ee268b9ead%3A0x2fec073676432313!2sMcDonald&#39;s!5e0!3m2!1ses!2sar!4v1687877975307!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="redes">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        
+  
+    </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
 </body>
 </html>
