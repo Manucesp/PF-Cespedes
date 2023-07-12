@@ -6,7 +6,7 @@
     font-family: sans-serif;
 }
 .navegador{
-    background-color: rgba(35, 35, 36, 0.966);
+    background-color: rgb(35, 35, 36);
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -26,17 +26,22 @@
     display: flex;
     justify-content: end;
 }
+.navegador ul li a:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 .navegador ul li a{
     color: white;
     text-decoration: none;
     display: block;
     padding: 10px 20px;
     font-weight: bold;
+    
 }
 
 .carousel{
     margin-top: 110px;
-    
+   
 }
 .carousel-item img{
     width: 100%;
@@ -180,17 +185,17 @@
 /* HOJA CONTACTO */
 /* HOJA PRODUCTOS*/
 .titulo-productos{
-    font-size: 30px;
-    color: red;
-    
+    font-size: 45px;
+    margin-top: 150px;   
     font-weight: bold;
+    text-align: center;
 }
 .galeria{
     display: grid;
     grid-template-columns:(4,1fr);
     grid-template-rows: repeat(5,300px);
     gap: 10px;
-    margin-top: 180px;
+    margin-top: 30px;
     grid-template-areas: " img1  img2  img3   img4"
                          " img5  img6  img7   img8"
                          " img9  img10 img11 img12"
@@ -203,12 +208,16 @@
     object-fit: cover;
 }
 .galeria button{
-    background-color: rgb(22, 21, 21);
+    background-color: rgb(3, 75, 3);
     color: white;
     border-radius: 5px;
 }
+.shadow:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 .img1{
-    grid-area: img1;
+    grid-area: img1; 
     background-image: url(../Multimedia/productos/Acrilico\ blanco.jpg);
     background-size: cover;
     display: flex;
@@ -369,6 +378,31 @@
 }
 /* HOJA PRODUCTOS*/
 
+/* HOJA EMPRESA */
+.empresa-encabezado h5{
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+.empresa-encabezado{
+    margin-top: 150px;
+}
+
+.imagen{
+    width: 100%;
+}
+.imagen img{
+    width: 100%;
+}
+.empresa-galery{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+}
+
+
 @media(max-width:576px){
     .navegador .menu{
         display: block;
@@ -410,6 +444,9 @@
         max-width: 100%;
         height: auto;
     }
+    .empresa-galery{
+        grid-template-columns: repeat(1,1fr);
+    }
     
 }
 @media(min-width:576px){
@@ -436,6 +473,7 @@
     .dato-consulta{
         grid-column: 1/5;
     }
+    
 }
 @media(max-width:768px){
     .piePagina{
@@ -456,6 +494,9 @@
         max-width: 100%;
         height: auto;
     }
+    .empresa-galery{
+        grid-template-columns: repeat(2,1fr);
+    }
     
 }
 
@@ -473,6 +514,8 @@
     .piePagina .redes{
         grid-column: 1/3;
     }
-  
+    .empresa-galery{
+        grid-template-columns: repeat(4,1fr);
+    }
 }
 
