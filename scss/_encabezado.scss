@@ -1,0 +1,12 @@
+.encabezado{
+    margin-top: 130px;
+    font-size: 20px;
+    .info-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    h3{
+        color: red;
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,190 @@
+.galeria{
+    display: grid;
+    grid-template-columns:(4,1fr);
+    grid-template-rows: repeat(5,300px);
+    gap: 10px;
+    margin-top: 30px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    button{
+        background-color: rgb(3, 75, 3);
+        color: white;
+        border-radius: 5px;
+    }
+    .shadow{
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);    
+        }
+    }
+    .img1{
+        grid-area: img1; 
+        background-image: url(../Multimedia/productos/Acrilico\ blanco.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img2{
+        grid-area: img2;
+        background-image: url(../Multimedia/productos/Acrilico\ color.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img3{
+        grid-area: img3;
+        background-image: url(../Multimedia/productos/Acrilico\ Cristal.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img4{
+        grid-area: img4;
+        background-image: url(../Multimedia/productos/caja\ bonaqua.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img5{
+        grid-area: img5;
+        background-image: url(../Multimedia/productos/cartel\ corporeo.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img6{
+        grid-area: img6;
+        background-image: url(../Multimedia/productos/Cartel\ deslizable.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img7{
+        grid-area: img7;
+        background-image: url(../Multimedia/productos/cartel\ direccional.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img8{
+        grid-area: img8;
+        background-image: url(../Multimedia/productos/display.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img9{
+        grid-area: img9;
+        background-image: url(../Multimedia/productos/Identificador.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img10{
+        grid-area: img10;
+        background-image: url(../Multimedia/productos/mampara\ proteccion.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img11{
+        grid-area: img11;
+        background-image: url(../Multimedia/productos/piezas\ especiales.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img12{
+        grid-area: img12;
+        background-image: url(../Multimedia/productos/Piezas\ industriales.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img13{
+        grid-area: img13;
+        background-image: url(../Multimedia/productos/portafolleto.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img14{
+        grid-area: img14;
+        background-image: url(../Multimedia/productos/portaFolleto3.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img15{
+        grid-area: img15;
+        background-image: url(../Multimedia/productos/portafolletoA4.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img16{
+        grid-area: img16;
+        background-image: url(../Multimedia/productos/Reconocimiento.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img17{
+        grid-area: img17;
+        background-image: url(../Multimedia/productos/Reconocimiento.jpg2.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img18{
+        grid-area: img18;
+        background-image: url(../Multimedia/productos/tubo\ color.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img19{
+        grid-area: img19;
+        background-image: url(../Multimedia/productos/tubos\ cristal.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .img20{
+        grid-area: img20;
+        background-image: url(../Multimedia/productos/Urna.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        
+    }
+    
+    grid-template-areas: " img1  img2  img3   img4"
+                         " img5  img6  img7   img8"
+                         " img9  img10 img11 img12"
+                         " img13 img14 img15 img16"
+                         " img17 img18 img19 img20"
+}                        

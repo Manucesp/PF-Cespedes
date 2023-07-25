@@ -1,0 +1,14 @@
+.empresa-galery{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+    .imagen{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+
+}

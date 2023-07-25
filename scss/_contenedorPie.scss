@@ -1,0 +1,16 @@
+.contenedor-pie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    h5{
+        font-size: 20px;
+        margin: 10px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 15px;
+        margin: 10px;
+        
+    }
+}

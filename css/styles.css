@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.carousel {
+  margin-top: 110px;
+  width: 100%;
+}
+.carousel .carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.navegador {
+  background-color: rgb(35, 35, 36);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navegador img {
+  margin: 10px;
+}
+.navegador .menu {
+  display: none;
+}
+.navegador ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  z-index: 1;
+}
+.navegador ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.navegador ul li a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta {
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.tarjeta img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.tarjeta button {
+  background-color: rgba(179, 8, 8, 0.911);
+  color: white;
+  border-radius: 5px;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contenedor-pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.contenedor-pie h5 {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bold;
+}
+.contenedor-pie p {
+  font-size: 15px;
+  margin: 10px;
+}
+
+.piePagina {
+  background-color: rgba(35, 35, 36, 0.966);
+  color: white;
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  column-gap: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-items: center;
+}
+.piePagina .info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.piePagina .info .logo img {
+  float: left;
+  margin: 5px;
+}
+.piePagina .contactos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.piePagina .contactos .mapa {
+  width: 70%;
+  height: 200px;
+}
+.piePagina .redes i {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.encabezado {
+  margin-top: 130px;
+  font-size: 20px;
+}
+.encabezado .info-contacto {
+  display: flex;
+  flex-direction: column;
+}
+.encabezado h3 {
+  color: red;
+  font-size: 30px;
+}
+
+.formulario {
+  font-size: 18px;
+  margin: 30px auto;
+  color: black;
+  padding: 30px;
+  background-color: #ffffff;
+  display: grid;
+  row-gap: 10px;
+  width: 768px;
+}
+.formulario .dato {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+.formulario .dato input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+}
+.formulario .dato input:focus {
+  border: 0;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+.formulario button {
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 4, 1fr;
+  grid-template-rows: repeat(5, 300px);
+  gap: 10px;
+  margin-top: 30px;
+  grid-template-areas: " img1  img2  img3   img4" " img5  img6  img7   img8" " img9  img10 img11 img12" " img13 img14 img15 img16" " img17 img18 img19 img20";
+}
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.galeria button {
+  background-color: rgb(3, 75, 3);
+  color: white;
+  border-radius: 5px;
+}
+.galeria .shadow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.galeria .img1 {
+  grid-area: img1;
+  background-image: url(../Multimedia/productos/Acrilico\ blanco.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img2 {
+  grid-area: img2;
+  background-image: url(../Multimedia/productos/Acrilico\ color.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img3 {
+  grid-area: img3;
+  background-image: url(../Multimedia/productos/Acrilico\ Cristal.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img4 {
+  grid-area: img4;
+  background-image: url(../Multimedia/productos/caja\ bonaqua.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img5 {
+  grid-area: img5;
+  background-image: url(../Multimedia/productos/cartel\ corporeo.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img6 {
+  grid-area: img6;
+  background-image: url(../Multimedia/productos/Cartel\ deslizable.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img7 {
+  grid-area: img7;
+  background-image: url(../Multimedia/productos/cartel\ direccional.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img8 {
+  grid-area: img8;
+  background-image: url(../Multimedia/productos/display.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img9 {
+  grid-area: img9;
+  background-image: url(../Multimedia/productos/Identificador.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img10 {
+  grid-area: img10;
+  background-image: url(../Multimedia/productos/mampara\ proteccion.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img11 {
+  grid-area: img11;
+  background-image: url(../Multimedia/productos/piezas\ especiales.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img12 {
+  grid-area: img12;
+  background-image: url(../Multimedia/productos/Piezas\ industriales.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img13 {
+  grid-area: img13;
+  background-image: url(../Multimedia/productos/portafolleto.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img14 {
+  grid-area: img14;
+  background-image: url(../Multimedia/productos/portaFolleto3.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img15 {
+  grid-area: img15;
+  background-image: url(../Multimedia/productos/portafolletoA4.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img16 {
+  grid-area: img16;
+  background-image: url(../Multimedia/productos/Reconocimiento.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img17 {
+  grid-area: img17;
+  background-image: url(../Multimedia/productos/Reconocimiento.jpg2.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img18 {
+  grid-area: img18;
+  background-image: url(../Multimedia/productos/tubo\ color.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img19 {
+  grid-area: img19;
+  background-image: url(../Multimedia/productos/tubos\ cristal.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.galeria .img20 {
+  grid-area: img20;
+  background-image: url(../Multimedia/productos/Urna.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.titulo-productos {
+  font-size: 45px;
+  margin-top: 150px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.empresa-galery {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.empresa-galery .imagen {
+  width: 100%;
+}
+.empresa-galery .imagen img {
+  width: 100%;
+}
+
+.empresa-encabezado {
+  margin-top: 150px;
+}
+.empresa-encabezado h5 {
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .navegador .menu {
+    display: block;
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    order: -1;
+  }
+  .navegador .menu:hover + ul {
+    left: 0px;
+  }
+  .navegador ul:hover {
+    left: 0px;
+  }
+  .navegador ul {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    background-color: rgb(12, 2, 2);
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 60vw;
+    height: 100vh;
+    padding-top: 100px;
+    transition: 0.5s;
+  }
+  .navegador ul li a {
+    color: white;
+    font-size: 25px;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .imagen-pie {
+    max-width: 100%;
+    height: auto;
+  }
+  .empresa-galery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .carousel {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .piePagina {
+    grid-template-columns: 1fr;
+  }
+  .piePagina .redes {
+    grid-column: auto;
+  }
+  .tarjetas {
+    justify-content: center;
+  }
+  .formulario {
+    width: 768px;
+    border-radius: 8px;
+  }
+  .imagen-pie {
+    max-width: 100%;
+    height: auto;
+  }
+  .empresa-galery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 300px);
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img10" "img11 img12" "img13 img14" "img15 img16" "img17 img18" "img19 img20";
+  }
+}
+@media (min-width: 576px) {
+  .formulario {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    align-items: center;
+  }
+  .dato-nombre {
+    grid-column: 1/3;
+  }
+  .dato-apellido {
+    grid-column: 3/5;
+  }
+  .dato-tel {
+    grid-column: 1/2;
+  }
+  .dato-mail {
+    grid-column: 3/5;
+  }
+  .dato-terminos {
+    grid-column: 1/3;
+  }
+  .dato-consulta {
+    grid-column: 1/5;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
