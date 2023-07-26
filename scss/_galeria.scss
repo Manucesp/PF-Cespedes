@@ -23,163 +23,136 @@
     .img1{
         grid-area: img1; 
         background-image: url(../Multimedia/productos/Acrilico\ blanco.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
     }
     .img2{
         grid-area: img2;
         background-image: url(../Multimedia/productos/Acrilico\ color.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img3{
         grid-area: img3;
         background-image: url(../Multimedia/productos/Acrilico\ Cristal.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img4{
         grid-area: img4;
         background-image: url(../Multimedia/productos/caja\ bonaqua.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img5{
         grid-area: img5;
         background-image: url(../Multimedia/productos/cartel\ corporeo.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img6{
         grid-area: img6;
         background-image: url(../Multimedia/productos/Cartel\ deslizable.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img7{
         grid-area: img7;
         background-image: url(../Multimedia/productos/cartel\ direccional.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img8{
         grid-area: img8;
         background-image: url(../Multimedia/productos/display.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img9{
         grid-area: img9;
         background-image: url(../Multimedia/productos/Identificador.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img10{
         grid-area: img10;
         background-image: url(../Multimedia/productos/mampara\ proteccion.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img11{
         grid-area: img11;
         background-image: url(../Multimedia/productos/piezas\ especiales.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img12{
         grid-area: img12;
         background-image: url(../Multimedia/productos/Piezas\ industriales.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img13{
         grid-area: img13;
         background-image: url(../Multimedia/productos/portafolleto.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img14{
         grid-area: img14;
         background-image: url(../Multimedia/productos/portaFolleto3.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img15{
         grid-area: img15;
         background-image: url(../Multimedia/productos/portafolletoA4.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img16{
         grid-area: img16;
         background-image: url(../Multimedia/productos/Reconocimiento.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img17{
         grid-area: img17;
         background-image: url(../Multimedia/productos/Reconocimiento.jpg2.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img18{
         grid-area: img18;
         background-image: url(../Multimedia/productos/tubo\ color.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img19{
         grid-area: img19;
         background-image: url(../Multimedia/productos/tubos\ cristal.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
     }
     .img20{
         grid-area: img20;
         background-image: url(../Multimedia/productos/Urna.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include productosPropiedades(cover ,flex, column, end)
+
         
+    }
+    @media(max-width:768px){
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(10,300px);
+        grid-template-areas: "img1 img2"
+                             "img3 img4"
+                             "img5 img6"
+                             "img7 img8"
+                             "img9 img10"
+                             "img11 img12"
+                             "img13 img14"
+                             "img15 img16"
+                             "img17 img18"
+                             "img19 img20"  
     }
     
     grid-template-areas: " img1  img2  img3   img4"

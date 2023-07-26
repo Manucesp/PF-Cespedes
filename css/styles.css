@@ -14,6 +14,12 @@
   height: 600px;
   object-fit: cover;
 }
+@media (max-width: 576px) {
+  .carousel {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .navegador {
   background-color: rgb(35, 35, 36);
@@ -31,6 +37,18 @@
 .navegador .menu {
   display: none;
 }
+@media (max-width: 576px) {
+  .navegador .menu {
+    display: block;
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    order: -1;
+  }
+  .navegador .menu:hover + ul {
+    left: 0px;
+  }
+}
 .navegador ul {
   list-style: none;
   display: flex;
@@ -47,6 +65,31 @@
 .navegador ul li a:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 576px) {
+  .navegador ul li a {
+    color: white;
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .navegador ul {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    background-color: rgb(12, 2, 2);
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 60vw;
+    height: 100vh;
+    padding-top: 100px;
+    transition: 0.5s;
+  }
+  .navegador ul:hover {
+    left: 0px;
+  }
 }
 
 .tarjeta {
@@ -75,6 +118,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .tarjetas {
+    justify-content: center;
+  }
 }
 
 .contenedor-pie {
@@ -128,6 +183,16 @@
   font-size: 30px;
   margin: 10px;
 }
+@media (max-width: 768px) {
+  .piePagina .redes i {
+    grid-column: auto;
+  }
+}
+@media (max-width: 768px) {
+  .piePagina {
+    grid-template-columns: 1fr;
+  }
+}
 
 .encabezado {
   margin-top: 130px;
@@ -175,6 +240,37 @@
   margin: 10px;
   border: none;
   border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .formulario {
+    width: 768px;
+    border-radius: 8px;
+  }
+}
+@media (min-width: 576px) {
+  .formulario .formulario {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    align-items: center;
+  }
+  .formulario .dato-nombre {
+    grid-column: 1/3;
+  }
+  .formulario .dato-apellido {
+    grid-column: 3/5;
+  }
+  .formulario .dato-tel {
+    grid-column: 1/2;
+  }
+  .formulario .dato-mail {
+    grid-column: 3/5;
+  }
+  .formulario .dato-terminos {
+    grid-column: 1/3;
+  }
+  .formulario .dato-consulta {
+    grid-column: 1/5;
+  }
 }
 
 .galeria {
@@ -359,6 +455,13 @@
   flex-direction: column;
   justify-content: end;
 }
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 300px);
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img10" "img11 img12" "img13 img14" "img15 img16" "img17 img18" "img19 img20";
+  }
+}
 
 .titulo-productos {
   font-size: 45px;
@@ -380,6 +483,16 @@
 .empresa-galery .imagen img {
   width: 100%;
 }
+@media (max-width: 576px) {
+  .empresa-galery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .empresa-galery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .empresa-encabezado {
   margin-top: 150px;
@@ -391,104 +504,15 @@
 }
 
 @media (max-width: 576px) {
-  .navegador .menu {
-    display: block;
-    color: white;
-    font-size: 30px;
-    margin: 10px;
-    order: -1;
-  }
-  .navegador .menu:hover + ul {
-    left: 0px;
-  }
-  .navegador ul:hover {
-    left: 0px;
-  }
-  .navegador ul {
-    position: fixed;
-    top: 0;
-    left: -500px;
-    background-color: rgb(12, 2, 2);
-    color: white;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    width: 60vw;
-    height: 100vh;
-    padding-top: 100px;
-    transition: 0.5s;
-  }
-  .navegador ul li a {
-    color: white;
-    font-size: 25px;
-  }
-  .tarjetas {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
   .imagen-pie {
     max-width: 100%;
-    height: auto;
-  }
-  .empresa-galery {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .carousel {
-    width: 100%;
     height: auto;
   }
 }
 @media (max-width: 768px) {
-  .piePagina {
-    grid-template-columns: 1fr;
-  }
-  .piePagina .redes {
-    grid-column: auto;
-  }
-  .tarjetas {
-    justify-content: center;
-  }
-  .formulario {
-    width: 768px;
-    border-radius: 8px;
-  }
   .imagen-pie {
     max-width: 100%;
     height: auto;
-  }
-  .empresa-galery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .galeria {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(10, 300px);
-    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img10" "img11 img12" "img13 img14" "img15 img16" "img17 img18" "img19 img20";
-  }
-}
-@media (min-width: 576px) {
-  .formulario {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
-    align-items: center;
-  }
-  .dato-nombre {
-    grid-column: 1/3;
-  }
-  .dato-apellido {
-    grid-column: 3/5;
-  }
-  .dato-tel {
-    grid-column: 1/2;
-  }
-  .dato-mail {
-    grid-column: 3/5;
-  }
-  .dato-terminos {
-    grid-column: 1/3;
-  }
-  .dato-consulta {
-    grid-column: 1/5;
   }
 }
 

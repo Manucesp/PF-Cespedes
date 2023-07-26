@@ -32,6 +32,11 @@
     .redes i{
         font-size: 30px;
         margin: 10px;
-       
+        @media(max-width:768px){
+            grid-column: auto;
+        }
+    }
+    @media(max-width:768px){
+        grid-template-columns: 1fr;
     }
 }

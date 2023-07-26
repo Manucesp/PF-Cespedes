@@ -1,0 +1,11 @@
+@mixin productosPropiedades($background-size, $display, $flex-direction, $justify-content){
+    background-size: $background-size;
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
+@mixin medidas($width, $heigh, $padding){
+    width: $width;
+    height: $heigh;
+    padding: $padding;
+}
