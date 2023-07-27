@@ -4,8 +4,8 @@
     flex-direction: $flex-direction;
     justify-content: $justify-content;
 }
-@mixin medidas($width, $heigh, $padding){
+@mixin anchoAlto($width, $heigh){
     width: $width;
     height: $heigh;
-    padding: $padding;
+
 }

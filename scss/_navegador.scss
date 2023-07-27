@@ -14,7 +14,7 @@
         display: none;
         @media(max-width:576px){
             display: block;
-            color: white;
+            color: $colorSecondary;
             font-size: 30px;
             margin: 10px;
             order: -1;
@@ -31,7 +31,7 @@
 
         li a {
             
-                color: white;
+                color: $colorSecondary;
                 text-decoration: none;
                 display: block;
                 padding: 10px 20px;
@@ -41,7 +41,7 @@
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);    
                 }
                 @media(max-width:576px){
-                    color: white;
+                    color: $colorSecondary;
                     font-size: 25px;
                 }
             }  
@@ -51,7 +51,7 @@
                 top: 0;
                 left: -500px;
                 background-color: rgb(12, 2, 2);
-                color: white;
+                color: $colorSecondary;
                 flex-direction: column;
                 align-items: center;
                 justify-content: start;

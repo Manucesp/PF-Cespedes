@@ -1,6 +1,6 @@
 .piePagina{
     background-color:rgba(35, 35, 36, 0.966);
-    color: white;
+    color: $colorSecondary;
     display: grid;
     grid-template-columns: 2fr 4fr 1fr;
     column-gap: 10px;
@@ -26,17 +26,26 @@
         .mapa{
             width: 70%;
             height: 200px;
+            @include anchoAlto(70%, 200px);
         }
         
     }
-    .redes i{
+    .redes { 
+      i{
         font-size: 30px;
         margin: 10px;
         @media(max-width:768px){
             grid-column: auto;
         }
+        
     }
     @media(max-width:768px){
         grid-template-columns: 1fr;
     }
+    @each $clave, $valor in $redes{
+        .#{$clave}{
+            color:$valor;
+        }
+    }
+  }
 }

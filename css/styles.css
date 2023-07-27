@@ -178,6 +178,8 @@
 .piePagina .contactos .mapa {
   width: 70%;
   height: 200px;
+  width: 70%;
+  height: 200px;
 }
 .piePagina .redes i {
   font-size: 30px;
@@ -189,9 +191,18 @@
   }
 }
 @media (max-width: 768px) {
-  .piePagina {
+  .piePagina .redes {
     grid-template-columns: 1fr;
   }
+}
+.piePagina .redes .twitter {
+  color: #55acee;
+}
+.piePagina .redes .facebook {
+  color: #3a5795;
+}
+.piePagina .redes .whatsapp {
+  color: #4fcb5b;
 }
 
 .encabezado {
@@ -212,7 +223,7 @@
   margin: 30px auto;
   color: black;
   padding: 30px;
-  background-color: #ffffff;
+  background-color: white;
   display: grid;
   row-gap: 10px;
   width: 768px;
