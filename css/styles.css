@@ -147,6 +147,12 @@
   font-size: 15px;
   margin: 10px;
 }
+@media (max-width: 972px) {
+  .contenedor-pie {
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .piePagina {
   background-color: rgba(35, 35, 36, 0.966);
@@ -286,7 +292,7 @@
 
 .galeria {
   display: grid;
-  grid-template-columns: 4, 1fr;
+  grid-template-columns: repeat 2, 1fr;
   grid-template-rows: repeat(5, 300px);
   gap: 10px;
   margin-top: 30px;
@@ -298,9 +304,28 @@
   object-fit: cover;
 }
 .galeria button {
-  background-color: rgb(3, 75, 3);
+  border: 0;
+  background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+  border-radius: 8px;
   color: white;
-  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.galeria button span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.galeria button span:hover {
+  background: none;
+}
+.galeria button:active {
+  transform: scale(0.9);
 }
 .galeria .shadow:hover {
   transform: scale(1.05);
@@ -468,8 +493,8 @@
 }
 @media (max-width: 768px) {
   .galeria {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(10, 300px);
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 10, 300px;
     grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img10" "img11 img12" "img13 img14" "img15 img16" "img17 img18" "img19 img20";
   }
 }
@@ -489,10 +514,17 @@
   gap: 8px;
 }
 .empresa-galery .imagen {
-  width: 100%;
+  overflow: hidden;
 }
 .empresa-galery .imagen img {
   width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.empresa-galery .imagen img:hover {
+  transform: scale(1.5);
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 576px) {
   .empresa-galery {
@@ -508,7 +540,7 @@
 .empresa-encabezado {
   margin-top: 150px;
 }
-.empresa-encabezado h5 {
+.empresa-encabezado h1 {
   font-size: 30px;
   color: red;
   font-weight: bold;
