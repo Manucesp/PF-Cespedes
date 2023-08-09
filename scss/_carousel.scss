@@ -2,10 +2,16 @@
     margin-top: 110px;
     width: 100%;
     .carousel-item img{
-         @include anchoAlto(100%,600px);
+         @include anchoAlto(100%, auto);
         object-fit: cover;
     }
     @media(max-width:576px){
+        @include anchoAlto(100%, auto);
+    }
+    @media(max-width:768px){
+        @include anchoAlto(100%, auto);
+    }
+    @media(max-width:1200px){
         @include anchoAlto(100%, auto);
     }
 }
