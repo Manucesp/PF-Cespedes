@@ -36,7 +36,7 @@
 .navegador {
   background-color: rgb(35, 35, 36);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
   top: 0;
   display: flex;
@@ -133,8 +133,6 @@
 }
 @media (max-width: 576px) {
   .tarjetas {
-    display: grid;
-    grid-template-columns: 1fr;
     justify-content: center;
   }
 }
@@ -545,6 +543,9 @@
   font-weight: bold;
 }
 
+.imagen-pie {
+  width: 100%;
+}
 @media (max-width: 576px) {
   .imagen-pie {
     max-width: 100%;
